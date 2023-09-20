@@ -1,3 +1,5 @@
+/* CSS Reset */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,7 +18,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	 vertical-align: baseline; 
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -40,4 +42,142 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+
+/*  Styling */
+body{
+	background: #27374D;
+	font-family: 'Croissant One', cursive;
+}
+
+h1{
+  padding: 0 0 2% 0 ;
+  font-family: 'Croissant One', cursive;
+  text-align: center;
+  color: #27374D;
+  font-size: 1em;
+}
+
+.input-group{
+	display: flex;
+	justify-content:space-between;
+	margin: 2% 8%;
+} 
+
+.container {
+	width: 50%;
+	background: #9DB2BF;
+	padding: 5%;
+	text-align: center;
+	margin: 10% auto;
+	border-radius: 20px;
+}
+
+input{
+	width: 100%;
+	height: 1.7em;
+	font-size: .5em;
+	border-radius: 6px;
+	text-indent: 5px;
+	font-family: 'Croissant One', cursive;
+	color: #27374D;
+}
+.button{
+	width: 25%;
+	margin-left: 1%;
+	background: white;
+	cursor: pointer;
+	color: #27374D;
+	font-family: 'Croissant One', cursive;
+	font-weight: bolder;
+	border-radius: 6px;
+	transition: all 0.5s ease-out;
+	font-size:.5em;
+}
+.button:hover{
+	color: white;
+	background: rgb(112, 204, 124);
+}
+
+ul{
+	margin: 3% auto;
+	width: 100%;
+	border-radius: 8px;
+	background: #27374D;
+	align-items: center;
+}
+li{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+p{
+	text-align: left;
+	text-indent: 5px;
+	margin: 5%;
+	padding: 2%;
+	padding-bottom: 4%;
+	background: white;
+	color: #27374D;
+	border-radius: 8px;
+	font-size: .8em;
+	width: 80%;
+	height: .5em;
+	
+}
+li input {
+	margin: 1%;
+	height: 6em;
+	width: 5%;
+}
+.trash{
+	width: 25%;
+	margin-right: 2%;
+	background: white;
+	cursor: pointer;
+	color: #27374D;
+	font-family: 'Croissant One', cursive;
+	font-weight: bolder;
+	border-radius: 4px;
+	transition: all 0.5s ease-out;
+	font-size: 6px;
+}
+
+.trash:hover{
+	color: white;
+	background: rgb(226, 22, 22);
+}
+
+
+
+
+
+
+@media screen and (min-width: 600px){
+	h1{
+		font-size: 2em;
+	}
+	input{
+		text-indent: 10px;
+		height: 3em;
+		width: 100%;
+	}
+	.button{
+		width: 20%;
+		margin: 0 1%;
+	}
+	.trash{
+		width: 10%;
+		height: 4.5em;
+		font-size: 6px;
+	}
+	li{
+		margin: 0% 0;
+	}
+	ul input {
+		height: 3em;
+		width: 10%;
+
+	}
 }
