@@ -106,6 +106,7 @@ ul{
 	border-radius: 8px;
 	background: #27374D;
 	align-items: center;
+	padding: 5% 0;
 }
 li{
 	display: flex;
@@ -149,7 +150,27 @@ li input {
 	background: rgb(226, 22, 22);
 }
 
+.crossed-out {
+  text-decoration: line-through;
+	text-decoration-color: green;
+	text-decoration-thickness: 2px;
+	color: #c6c6c6;
+}
+#remaining{
+	color: #DDE6ED;
+	margin: 10% 0;
+	padding: 5%;
+}
 
+@keyframes slideDown {
+  from { transform: translateY(0); }
+  to { transform: translateY(1000%); }
+}
+.slide-down {
+  animation-name: slideDown;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
 
 
 
